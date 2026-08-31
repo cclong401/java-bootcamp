@@ -1,0 +1,1 @@
+invokevirtual calls a method, ldc loads in a variable, return completes a call.
