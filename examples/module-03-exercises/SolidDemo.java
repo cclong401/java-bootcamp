@@ -1,0 +1,18 @@
+public class SolidDemo {
+    // Business calculation: returns data; does not print.
+    static double calculateInterest(double balance, double ratePercent) {
+        // return balance * ratePercent / 100.0 (no System.out here)
+        return balance * ratePercent / 100;
+    }
+
+    // Presentation: formats a value; does not calculate it.
+    static void printInterest(double interest) {
+        // printf "Interest earned: %.2f%n"
+        System.out.printf("Interest earned: %.2f", interest);
+    }
+
+    static void main(String[] args) {
+        // calculate interest for 10_000 at 5%, then print it
+        printInterest(calculateInterest(10000, 5));
+    }
+}
